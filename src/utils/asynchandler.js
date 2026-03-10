@@ -17,7 +17,7 @@ export {asynchandler}
 //   try{
 //   await fn(req,res,next)
 //   }catch(error){
-//     res.status(err.code  || 500).json({
+//     res.status(error.code  || 500).json({
 //       succcess:false,
 //       message:err.message
 //     })
