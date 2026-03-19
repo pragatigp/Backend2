@@ -18,7 +18,6 @@ export const verifyJWT=asynchandler(async(req ,_,next)=>{
     const user=await User.findById(decodedToken?._id).select("-password -refreshToken")
   
     if(!user){
-      //next_vide:todo discuss about frontend
          throw new ApiError(401,"Inavalid access token")
     }
   
