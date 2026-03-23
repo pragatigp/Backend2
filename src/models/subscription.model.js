@@ -12,4 +12,4 @@ channel:{
 },{timestamps:true})
 
 
-export const Subscription =moongose.model("Subscription",subscriptionSchema)
+export const Subscription =mongoose.model("Subscription",subscriptionSchema)
